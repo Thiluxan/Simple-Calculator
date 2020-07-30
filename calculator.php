@@ -46,13 +46,5 @@ session_start();
         </table>
         <br>
     </div>
-    <?php
-    
-         $_SESSION["num1"] = "<script>this.num1</script>";
-         $_SESSION["num2"] = "<script>this.num2</script>";
-         $_SESSION["symbol"] = "<script>this.symbol</script>";
-         $_SESSION["total"] = "<script>this.total</script>";
-       
-    ?>
 </body>
 </html>

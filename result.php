@@ -1,6 +1,4 @@
-<?php
-    session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +10,13 @@
 </head>
 <body>
     <div class="calculator-grid">
-        <!--<input type="button" value="View" onclick="view()"><br>-->
         <div class="result-grid">
-            <span id="num1"><?php echo $_SESSION["num1"]; ?></span>
-            <span id="symbol"><?php echo $_SESSION["symbol"]; ?></span>
-            <span id="num2"><?php echo $_SESSION["num2"]; ?></span><br>
+            <br>
+            <span id="num1"><?php echo $_GET["num1"]; ?></span>
+            <span id="symbol"><?php echo $_GET["symbol"]; ?></span>
+            <span id="num2"><?php echo $_GET["num2"]; ?></span><br>
             <span id="equal">=</span>
-            <span id="answer"<?php echo $_SESSION["total"]; ?>></span>
+            <span id="answer"><?php echo $_GET['answer']; ?></span>
         </div>
         <br><br><br>
         <a href="calculator.php">Back to Calculator</a>

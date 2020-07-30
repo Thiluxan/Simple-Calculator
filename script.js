@@ -52,16 +52,5 @@ function output(){
     }
     console.log(this.total); 
     document.getElementById("display-number").innerHTML = this.total.toString();
-    //window.location.href="result.php";
-    window.location.replace("result.php");
+    window.location.href="result.php?answer="+this.total+"&num1="+this.num1+"&num2="+this.num2+"&symbol="+this.symbol;
 }
-/*
-function view(){
-    
-    document.getElementById("num1").innerHTML = this.num1.toString();
-    document.getElementById("symbol").innerHTML = this.symbol;
-    document.getElementById("num2").innerHTML = this.num2.toString();
-    document.getElementById("answer").innerHTML = this.total.toString();
-    this.num1 = this.total;
-    this.num2 = 0;
-}*/
