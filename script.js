@@ -36,21 +36,26 @@ function refresh(){
 }
 
 function output(){
+    var nota;
     switch(this.symbol){
         case "+":
             this.total = this.num1 + this.num2;
+            nota = 1;
             break;
         case "-":
             this.total = this.num1 - this.num2;
+            nota = 2;
             break;
-        case "*":
+        case "x":
             this.total = this.num1 * this.num2;
+            nota = 3;
             break;
-        case "/":
+        case "÷":
             this.total = this.num1 / this.num2;
+            nota = 4;
             break;
     }
     console.log(this.total); 
     document.getElementById("display-number").innerHTML = this.total.toString();
-    window.location.href="result.php?answer="+this.total+"&num1="+this.num1+"&num2="+this.num2+"&symbol="+this.symbol;
+    window.location.href="result.php?answer="+this.total+"&num1="+this.num1+"&num2="+this.num2+"&notation="+nota;
 }
